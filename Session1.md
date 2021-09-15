@@ -1,4 +1,9 @@
+# Data Mining Training Session
+
+<div style="page-break-after: always;"></div>
+
 # Table of Contents
+- [Data Mining Training Session](#data-mining-training-session)
 - [Table of Contents](#table-of-contents)
 - [About the Facilitator](#about-the-facilitator)
 - [About the session](#about-the-session)
@@ -17,32 +22,32 @@
     - [What is Python?](#what-is-python)
       - [Command Line](#command-line)
       - [Script Mode](#script-mode)
-  - [Program](#program)
-  - [Errors](#errors)
-  - [Debugging](#debugging)
-  - [Variables](#variables)
-  - [Expressions](#expressions)
-  - [Assignments](#assignments)
-  - [Statements](#statements)
-  - [Operators and Operands](#operators-and-operands)
-  - [Checkpoint](#checkpoint)
-    - [Poll Checkpoint 1](#poll-checkpoint-1)
-    - [Exercise 1](#exercise-1)
-    - [Exercise 2](#exercise-2)
-  - [Formatted Printing](#formatted-printing)
-  - [Data Types](#data-types)
-  - [Conditional Statements](#conditional-statements)
-    - [Spot the difference](#spot-the-difference)
-    - [Nested Conditions](#nested-conditions)
-  - [Looping Statements](#looping-statements)
-    - [For Loop](#for-loop)
-    - [While Loop](#while-loop)
-    - [Continue](#continue)
-    - [Break](#break)
-  - [Checkpoint 2](#checkpoint-2)
-    - [Poll Checkpoint 2](#poll-checkpoint-2)
-    - [Exercise 3](#exercise-3)
-    - [Exercise 4](#exercise-4)
+    - [Program](#program)
+    - [Errors](#errors)
+    - [Debugging](#debugging)
+    - [Variables](#variables)
+    - [Expressions](#expressions)
+    - [Assignments](#assignments)
+    - [Statements](#statements)
+    - [Operators and Operands](#operators-and-operands)
+    - [Checkpoint](#checkpoint)
+      - [Poll Checkpoint 1](#poll-checkpoint-1)
+      - [Exercise 1](#exercise-1)
+      - [Exercise 2](#exercise-2)
+    - [Formatted Printing](#formatted-printing)
+    - [Data Types](#data-types)
+    - [Conditional Statements](#conditional-statements)
+      - [Spot the difference](#spot-the-difference)
+      - [Nested Conditions](#nested-conditions)
+    - [Looping Statements](#looping-statements)
+      - [For Loop](#for-loop)
+      - [While Loop](#while-loop)
+      - [Continue](#continue)
+      - [Break](#break)
+    - [Checkpoint 2](#checkpoint-2)
+      - [Poll Checkpoint 2](#poll-checkpoint-2)
+      - [Exercise 3](#exercise-3)
+      - [Exercise 4](#exercise-4)
   - [Functions](#functions)
     - [Function Return](#function-return)
   - [Input Method](#input-method)
@@ -51,6 +56,7 @@
     - [Exercise 5](#exercise-5)
     - [Exercise 6](#exercise-6)
     - [Exercise 7](#exercise-7)
+<div style="page-break-after: always;"></div>
 
 # About the Facilitator
 
@@ -84,6 +90,8 @@
     * *I was able to deliver these projects using only Python*
     * **Self-pledged pythonista**
 
+<div style="page-break-after: always;"></div>
+
 # About the session
 
 Data mining and Data Science is also known as knowledge discovery in data. While this has been a growing community and profession that attempts to uncover patterns and other valuable information from large datasets, not all types of analysis are used as frequently. 
@@ -92,7 +100,11 @@ We constantly see graphs and charts as means for statisticians and Data Scientis
 
 This training session attempts to promote the use of Geospatial analysis as another tool that aspiring Data Scientists can add to their arsenal and skillset.
 
+<div style="page-break-after: always;"></div>
+
 ## Spatial Analytics Application
+
+### Telecommunications
 [Reference](http://gis.smumn.edu/GradProjects/McGregorP.pdf)
 
 ```
@@ -110,7 +122,7 @@ weighted criteria system.
 
 ![](./media/telco_application.png)
 
-### Telecommunications
+<div style="page-break-after: always;"></div>
 
 ### Crime Prevention
 [Reference](https://www.researchgate.net/publication/288955193_Spatial_Analysis_of_Factors_Responsible_for_Spread_of_Crime_Activities_in_Akure_Nigeria_Using_GIS_Techniques)
@@ -122,6 +134,8 @@ It was found that crime hotspots are more prevalent in the city core. In view of
 ```
 
 ![](https://www.researchgate.net/profile/Ayo-Olajuyigbe/publication/288955193/figure/fig2/AS:313382663147521@1451727657547/Map-showing-geospatial-analysis-of-level-of-crime-in-the-study-area.png)
+
+<div style="page-break-after: always;"></div>
 
 ### Marketing
 
@@ -153,12 +167,15 @@ The explosion of user-generated content through social media can be leveraged to
 
 ![](https://www.ushahidi.com/uploads/impact-report/case-studies/kenya.png)
 
+<div style="page-break-after: always;"></div>
 
 ## Prerequisites
 
 We need to tackle the following:
 * Learn the foundations of the tool that can be used for Spatial Analytics
 * Learn the foundations of Data Mining
+
+<div style="page-break-after: always;"></div>
 
 # House Rules
 
@@ -175,6 +192,7 @@ If all participants were able to finish before the time runs out, the lecturer s
 If a participant signals that their code occurred an error that they cannot fix, the lecturer may request the participant to project their screen for participation in debugging the issue.
 
 <!--trigger poll-->
+*let's have a poll*
 
 
 ![](./media/zoom_signals.png)
@@ -185,6 +203,8 @@ If a participant signals that their code occurred an error that they cannot fix,
 * Coffee - away
 * Slow / Fast - as is
 
+<div style="page-break-after: always;"></div>
+
 # Objectives
 
 * Install, setup, and run python applications
@@ -193,6 +213,7 @@ If a participant signals that their code occurred an error that they cannot fix,
 * Acquire fundamental knowledge and common operations for Geospatial Analysis
 * Learn and apply Python Libraries for Geospatial Analysis
 
+<div style="page-break-after: always;"></div>
 
 ## Obj: Install, setup, and run python applications
 
@@ -235,6 +256,17 @@ Run options based on the cursor location
 * Run Current Cell Block of Code: `Ctl+Enter`
 * Run Current Cell Block of Code and Move to Next: `Shift+Enter`
 
+**Time**
+2 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
 ## Obj: Learn and apply basic and advanced programming skills in core python
 
 ### What is Python?
@@ -250,6 +282,8 @@ Run options based on the cursor location
 * Two ways to use interpreter
   * command line
   * script mode
+
+<div style="page-break-after: always;"></div>
 
 #### Command Line
 
@@ -267,7 +301,19 @@ print(1+1)
 (data_mining)$ cd Desktop/DataMiningTrainingSession
 (data_mining)$ python session1.py
 ```
-## Program
+
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+### Program
 A program  is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the roots of a polynomial, but it can also be a symbolic computation, such as searching and replacing text in a document or (strangely enough) compiling a program.
 
 **Terms:**
@@ -282,7 +328,9 @@ Programming is a complex process, and because it is done by human beings, it
 often leads to errors. For whimsical reasons, programming errors are called bugs
 and the process of tracking them down and correcting them is called debugging .
 
-## Errors
+<div style="page-break-after: always;"></div>
+
+### Errors
 
 Three kinds of errors can occur in a program:
 
@@ -292,11 +340,13 @@ Three kinds of errors can occur in a program:
 
 *semantic errors* -  the program you wrote is not the program you wanted to write
 
-## Debugging
+### Debugging
 
 Experimental debugging is like detective work. You are confronted with clues, and you have to infer the processes and events that led to the results you see.
 
-## Variables
+<div style="page-break-after: always;"></div>
+
+### Variables
 
 One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
 
@@ -306,11 +356,13 @@ One of the most powerful features of a programming language is the ability to ma
 * Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. `Bruce` and `bruce` are different variables.
 * You include underscore character
 
-## Expressions
+<div style="page-break-after: always;"></div>
+
+### Expressions
 
 If an expression is given as a command, it is evaluated, printed and the value is lost
 
-## Assignments
+### Assignments
 
 The **assignment statement** creates new variables and gives them values:
 
@@ -321,7 +373,7 @@ n = 17
 pi = 3.14159
 ```
 
-## Statements
+### Statements
 
 an instruction that the Python interpreter can execute.
 
@@ -343,7 +395,18 @@ my_taxes=my_income*tax_rate
 print(my_taxes)
 ```
 
-## Operators and Operands
+**Time**
+3 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+### Operators and Operands
 
 Operators are special symbols that represent computations like addition and multiplication. The values the operator uses are called  operands.
 
@@ -360,43 +423,76 @@ Operators are special symbols that represent computations like addition and mult
 * equal: `==`
 * not equal: `!=`
 
-## Checkpoint
+<div style="page-break-after: always;"></div>
 
-### Poll Checkpoint 1
+### Checkpoint
+
+#### Poll Checkpoint 1
 
 What type of error is shown below?
 
 ![](./media/checkpoint1.png)
 
-### Exercise 1
+<div style="page-break-after: always;"></div>
+
+#### Exercise 1
 
 Given the side length of a triangle a = 122, b = 22, c = 120, assign to variables `area` and perimeter `s` the following computation based on the Heron's formula and print the results for the following variables.
 
 ![](https://www.basic-mathematics.com/images/Heron-s-formula.png)
 
 ```python
+a = 122
+b = 22
+c = 120
+#...
 # Answer
 s = 132
 area = 1320
 ```
 
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
 [Solution](./s1_solutions/ex1.py)
 
+<div style="page-break-after: always;"></div>
 
-### Exercise 2
+#### Exercise 2
 
 Given arguments P, Y, R, calculate the monthly payments you would have to make over Y years to pay off P dollar loan at R percent interest compounded monthly. The formula is shown below:
 
 ![](./media/exercise1.png)
 
 ```python
+P = 122
+Y = 22
+R = 120
+#...
 # Answer
 Payment = 41.98862770388198
 ```
 
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
 [Solution](./s1_solutions/ex2.py)
 
-## Formatted Printing
+<div style="page-break-after: always;"></div>
+
+### Formatted Printing
 
 ``` python
 food = "pizza"
@@ -413,6 +509,17 @@ print('In %s, we can convert %d percent as %f in decimal' % (_str, _int, _float)
 print('%f can be rounded up to %.1f' % (_float, _float))
 ```
 
+**Time**
+4 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
 ``` python
 print('%d %d %d %d' % (1,2,3,4))
 
@@ -426,6 +533,17 @@ print(formatter % (1,2,3,4))
 
 print(formatter % ('one', 'two', 'three', 'four'))
 ```
+
+**Time**
+4 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
 
 ``` python
 print('Print statements use single quotes')
@@ -446,7 +564,18 @@ _str = "string"
 print('I can also concat ', _str)
 ```
 
-## Data Types
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+### Data Types
 
 There are different kinds of datatypes in python:
 * integer
@@ -458,6 +587,17 @@ There are different kinds of datatypes in python:
   pi = 3.14159
   half = 1/2
   ```
+
+**Time**
+3 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
 * string
     ``` python
     str1 = 'Hello'
@@ -484,6 +624,17 @@ There are different kinds of datatypes in python:
     # what happens?
     print(str1[-1])
     ```
+
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
 * list:
     ``` python
     hairs = ['brown', 'blond', 'red']
@@ -523,6 +674,17 @@ There are different kinds of datatypes in python:
     print(hairs.pop()) #black (last one)
     print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black']
     ```
+
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
 * tuple
   * the same with `list` BUT it is enclosed with parentheses `()`
       ``` python
@@ -552,6 +714,17 @@ There are different kinds of datatypes in python:
       # try
       _tuple.insert(1) 
       ```
+
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
 * dictionary
   * kind of hash table type
   * key-value pair. key can be any data type but usually numbers and strings
@@ -580,9 +753,20 @@ There are different kinds of datatypes in python:
   print(tinydictio.values()) 
   ```
 
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
+
 <!--Possible Lunchbreak-->
   
-## Conditional Statements
+### Conditional Statements
 
 ``` python
 a = -1
@@ -594,11 +778,22 @@ else:
     print("negative")
 ```
 
-### Spot the difference
+#### Spot the difference
 
 ![](./media/conditional_statement.png)
 
-### Nested Conditions
+
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+<div style="page-break-after: always;"></div>
+
+#### Nested Conditions
 
 ``` python
 a = 0
@@ -614,9 +809,20 @@ else:
 print(a)
 ```
 
-## Looping Statements
+**Time**
+5 minutes
 
-### For Loop
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+### Looping Statements
+
+#### For Loop
 
 ``` python
 hairs = ['brown', 'blond', 'red']
@@ -644,7 +850,18 @@ for c in range(x,y,step):
     # prints from x to y - 1 with step as addend
 ```
 
-### While Loop
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+#### While Loop
 
 ``` python
 i = 0
@@ -658,7 +875,7 @@ while i < 6:
     print("At the bottom i is %d:" % i)
 ```
 
-### Continue
+#### Continue
 
 ``` python
 for a in range(10):
@@ -667,7 +884,7 @@ for a in range(10):
     print(a)
 ```
 
-### Break
+#### Break
 ``` python
 for a in range(10)
     if a == 5:
@@ -675,11 +892,24 @@ for a in range(10)
     print(a)
 ```
   
-## Checkpoint 2
+**Time**
+5 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+### Checkpoint 2
   
-### Poll Checkpoint 2
+#### Poll Checkpoint 2
   
-### Exercise 3
+<div style="page-break-after: always;"></div>
+
+#### Exercise 3
 
 Write a program that adds one to all even numbers on this list
 
@@ -697,7 +927,18 @@ for counter, value in enumerate(value_list):
 
 [Solution](ex3.py)
 
-### Exercise 4
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+#### Exercise 4
 
 Write a program that checks all values in list and then prints out the string relative to its value as indicated in the figure below. Note, if it touches the border, it should print "Border"
 
@@ -715,6 +956,17 @@ _list = [-25, 50, 25, 100]
 <!--Lunchbreak-->
 
 [Solution](ex4.py)
+
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
 
 ## Functions
 
@@ -755,6 +1007,18 @@ result = add(3, 4)
 print(result)
 ```
 
+**Time**
+7 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
+
 ## Input Method
 
 ``` python
@@ -787,7 +1051,18 @@ print(type(y))
     ``` bash
     (data_mining)/path/to/DataMiningTrainingSession>python input_method.py apples oranges mangoes
     ```
+
+**Time**
+7 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
     
+<div style="page-break-after: always;"></div>
+
 ### Writing Files
 
 * create a file `writing_files.py` in our working directory
@@ -815,6 +1090,17 @@ print(type(y))
     (data_mining)/path/to/DataMiningTrainingSession>python writing_files.py input_method.py mirror.txt
     ```
 
+**Time**
+7 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
 ### Exercise 5
 
 Write a program `arithmetic.py`
@@ -838,6 +1124,17 @@ quotient = 0.50
 
 [Solution](./s1_solutions/arithmetic.py)
 
+**Time**
+10 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
+
 ### Exercise 6
 
 Write a program `grades.py` that prints the equivalent grade in letters.
@@ -847,7 +1144,18 @@ Write a program `grades.py` that prints the equivalent grade in letters.
 * [60, 70) is D
 * < 60 is E
 
+**Time**
+10 minutes
+
 [Solution](./s1_solutions/grades.py)
+
+<div style="page-break-after: always;"></div>
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
 
 ### Exercise 7
 
@@ -861,3 +1169,14 @@ Write a program `consonants.py`
 the quick brown fox jumps over the lazy dog
 ```
 [Solution](./s1_solutions/consonants.py)
+
+**Time**
+20 minutes
+
+**House Rules**
+* Raise hand - question / participation
+* Yes - done with exercise
+* No - error with exercise / need assistance
+* Coffee - away
+
+<div style="page-break-after: always;"></div>
