@@ -67,7 +67,9 @@ To ensure that you were able to install, Anaconda Navigator must be available in
 <div style="page-break-after: always;"></div>
 
 **Step 3: Create an environment and name it as `data_mining`**
+
 <img src="./media/anaconda_home.png" style="width:4in;">
+
 <img src="./media/create_environment.png" style="width:4in;">
 
 **Step 3: Open the terminal and type in command below**
@@ -77,6 +79,7 @@ To ensure that you were able to install, Anaconda Navigator must be available in
 ```
 
 <img src="./media/select_environment_terminal.png" style="width:4in;">
+
 <img src="./media/install_geopandas.png" style="width:4in;">
 
 ## Setup Checkpoint
