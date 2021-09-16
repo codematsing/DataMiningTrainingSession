@@ -14,7 +14,6 @@
   - [Day 1](#day-1)
   - [Day 2](#day-2)
   - [Day 3](#day-3)
-- [Meeting Room Information](#meeting-room-information)
 - [Contact Information](#contact-information)
 
 <div style="page-break-after: always;"></div>
@@ -68,7 +67,9 @@ To ensure that you were able to install, Anaconda Navigator must be available in
 <div style="page-break-after: always;"></div>
 
 **Step 3: Create an environment and name it as `data_mining`**
+
 <img src="./media/anaconda_home.png" style="width:4in;">
+
 <img src="./media/create_environment.png" style="width:4in;">
 
 **Step 3: Open the terminal and type in command below**
@@ -78,6 +79,7 @@ To ensure that you were able to install, Anaconda Navigator must be available in
 ```
 
 <img src="./media/select_environment_terminal.png" style="width:4in;">
+
 <img src="./media/install_geopandas.png" style="width:4in;">
 
 ## Setup Checkpoint
@@ -144,23 +146,6 @@ Ensure that you enable shortcuts to your menu or your desktop
     
 * Geopandas Library
 * Recap and Summary
-
-<div style="page-break-after: always;"></div>
-
-# Meeting Room Information
-
-Topic: Data Mining Using Python Programming
-
-Schedule:
-* Sept 16, 2021, Thursday. 8am - 5pm
-* Sept 17, 2021, Friday. 8am - 5pm
-* Sept 18, 2021, Saturday. 8am - 5pm
-
-[https://up-edu.zoom.us/j/84905432910](https://up-edu.zoom.us/j/84905432910)
-
-Meeting ID: 849 0543 2910
-
-Passcode: ISUmining
 
 <div style="page-break-after: always;"></div>
 
