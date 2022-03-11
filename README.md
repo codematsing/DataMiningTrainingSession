@@ -1,3 +1,41 @@
+---
+note_type: reference
+writing_type: draft
+toc: true
+toc-own-page: true
+listings-no-page-break: true
+linkcolor: blue
+date: Mar 12, 2022
+title: 'Python Tutorial'
+subtitle: 'A Python Tutorial focused for Data Mining'
+author: Sam Solis [sam.solis@codematsing.com]
+titlepage: true
+titlepage-background: '/home/sam/.pandoc/backgrounds/background7.pdf'
+titlepage-text-color: '546f7a'
+titlepage-rule-color: '546f7a'
+page-background: '/home/sam/.pandoc/backgrounds/background7.pdf'
+page-background-opacity: 0.15
+header-includes:
+- |
+  ```{=latex}
+  \usepackage{awesomebox}
+  \usepackage{tcolorbox}
+
+  \newtcolorbox{info-box}{colback=cyan!5!white,arc=0pt,outer arc=0pt,colframe=cyan!60!black}
+  \newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
+  \newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
+  ```
+pandoc-latex-environment:
+  noteblock: [note]
+  tipblock: [tip]
+  warningblock: [warning]
+  cautionblock: [caution]
+  importantblock: [important]
+  tcolorbox: [box]
+  info-box: [info]
+  warning-box: [warn]
+  error-box: [error]
+---
 # Data Mining Training Session
 
 <div style="page-break-after: always;"></div>
@@ -62,6 +100,7 @@ Go to menti.com
     * more advance installed libraries available
     * a bit slow
 
+<div style="page-break-after: always;"></div>
 
 ## Objectives
 
@@ -70,6 +109,8 @@ Go to menti.com
 * Learn and apply essential Data Science libraries used for data exploration, processing and transformation for further analysis
 * Apply python for data mining applications
 * Brief introduction for different data mining libraries
+
+<div style="page-break-after: always;"></div>
 
 ### Obj: Learn and apply basic and advanced programming skills in core python
 
@@ -87,6 +128,8 @@ Go to menti.com
   * command line
   * script mode
   * \* notebook - just command line
+
+<div style="page-break-after: always;"></div>
 
 #### Program
 A program  is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the roots of a polynomial, but it can also be a symbolic computation, such as searching and replacing text in a document or (strangely enough) compiling a program.
@@ -114,6 +157,8 @@ Three kinds of errors can occur in a program:
 #### Debugging
 
 Experimental debugging is like detective work. You are confronted with clues, and you have to infer the processes and events that led to the results you see.
+
+<div style="page-break-after: always;"></div>
 
 #### Variables
 
@@ -161,6 +206,8 @@ tax_rate=0.12
 my_taxes=my_income*tax_rate
 print(my_taxes)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Operators and Operands
 
@@ -229,6 +276,8 @@ _str = "string"
 print('I can also concat ', _str)
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Data Types
 
 There are different kinds of datatypes in python:
@@ -267,6 +316,9 @@ There are different kinds of datatypes in python:
     # what happens?
     print(str1[-1])
     ```
+    
+<div style="page-break-after: always;"></div>
+
 * list:
     ``` python
     hairs = ['brown', 'blond', 'red']
@@ -306,6 +358,9 @@ There are different kinds of datatypes in python:
     print(hairs.pop()) #black (last one)
     print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black']
     ```
+    
+<div style="page-break-after: always;"></div>
+
 * tuple
     * the same with `list` BUT it is enclosed with parentheses `()`
       ``` python
@@ -335,6 +390,9 @@ There are different kinds of datatypes in python:
       # try
       _tuple.insert(1) 
       ```
+    
+<div style="page-break-after: always;"></div>
+
 * dictionary
     * kind of hash table type
     * key-value pair. key can be any data type but usually numbers and strings
@@ -362,6 +420,8 @@ There are different kinds of datatypes in python:
   # Prints all the values
   print(tinydictio.values()) 
   ```
+    
+<div style="page-break-after: always;"></div>
 
 #### Conditional Statements
 
@@ -393,6 +453,8 @@ else:
 # what is a?
 print(a)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Looping Statements
 
@@ -438,6 +500,8 @@ while i < 6:
     print("At the bottom i is %d:" % i)
 ```
 
+<div style="page-break-after: always;"></div>
+
 * Continue
 
 ``` python
@@ -454,6 +518,8 @@ for a in range(10)
         break
     print(a)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Functions
 
@@ -494,6 +560,8 @@ result = add(3, 4)
 print(result)
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Input Method
 
 ``` python
@@ -522,6 +590,8 @@ print(type(y))
     print("fourth input: ", d)
     ```
 
+<div style="page-break-after: always;"></div>
+
 ### Writing Files
 
 * create a file `writing_files.py` in our working directory
@@ -543,6 +613,8 @@ print(type(y))
 
     input.close()
     ```
+
+<div style="page-break-after: always;"></div>
 
 ### Exercise 1
 
