@@ -36,6 +36,12 @@ pandoc-latex-environment:
   warning-box: [warn]
   error-box: [error]
 ---
+# Table of Contents
+* [Introduction](#data-mining-training-session)
+* [Requirements Installation](#python-installation)
+* [Core Python](#what-is-python)
+* [Exploratory Data Analysis](#revisit)
+
 # Data Mining Training Session
 
 <div style="page-break-after: always;"></div>
@@ -90,8 +96,17 @@ Go to menti.com
 * Regression Analysis
 
 ## Python installation:
+
+In this session, Installing an IDE (e.g. pycharm, VSCode) not mandatory while Jupyter-Notebook is more encourage for Exploratory Data Analysis
+
+Follow the instructions below to install the bare minimum for this course
+
 * [Install Jupyter-Notebook on Windows](https://www.youtube.com/watch?v=kf3AwEvNdno)
 * [Install Jupyter-Notebook on Mac](https://www.youtube.com/watch?v=9tPS-7TWjq0)
+
+### Links:
+* [Python](https://www.python.org/downloads/)
+* [Jupyter Notebook](https://jupyter.org/install)
 
 ## Online Python Notebooks:
 * [JupyterLite](https://jupyterlite.readthedocs.io/en/latest/_static/lab/)
@@ -722,3 +737,492 @@ quotient = 0.50
     ```
     the quick brown fox jumps over the lazy dog
     ```
+    
+### Obj: Learn and apply essential Data Science libraries used for data exploration, processing and transformation for further analysis
+
+#### Revisit
+
+Last session we introduced the core syntax of python
+
+In the next sessions, we will using [Jupyter-Notebook](https://jupyter.org/about). If you don't have it yet, kindly revisit [Installation Steps](#python-installation)
+
+#### Setup
+
+1. Create a folder in your *Desktop* named **DataMiningTrainingSession**
+2. Download and place the different files inside **DataMiningTrainingSession** folder (~/Desktop/DataMiningTrainingSession)
+    * [Automobile Data](https://drive.google.com/file/d/1rcBU-67YtvC4q93QLW8aJP7m3XyMBkHN/view?usp=sharing)
+    * [Sales Data](https://drive.google.com/file/d/19hHBV4qNfSEIxEnzWwEep_ICAbpBxPzx/view?usp=sharing)
+3. After [installing Jupyter-Notebook](#python-installation), open your command prompt / terminal, change its location to the project folder (~/Desktop/DataMiningTrainingSession). You can now open a jupyter-notebook by doing the following steps:
+    * [Open Jupyter-Notebook using Windows](https://www.youtube.com/watch?v=kguFtorzvxk)
+    * [Open Jupyter-Notebook using Windows](https://www.youtube.com/watch?v=G1Vm6wR0XIQ)
+4. Open a python3 jupyter notebook
+5. Run the code the following codes below:
+   *this will install the different libraries*
+    ![](docs/media/2022-04-02-22-50-18.png)
+    ![](docs/media/2022-04-02-22-52-44.png)
+
+#### What is Pandas?
+
+Pandas is a Python package providing fast, flexible and expressive data structures designed to make working with relational / tabular data both easy and intuitive.
+
+It aims to do practical, real-world data analysis in Python. Its goals is to become the **most powerful and flexible open source data analysis / manipulation tool**.
+
+Pandas is well suited for many different kinds of data:
+
+* Tabular data
+* Ordered and unordered time-series data
+* Arbitrary matrix data
+* Other forms of observational / statistical data sets
+
+#### Types of Data structures
+
+Series - 1-dimensional
+
+DataFrame - 2-dimensional
+
+#### Applications of Pandas
+
+* Handling of missing data
+* Size mutability - columns can be inserted and deleted from DataFrame
+* Powerful, flexible group by functionality to perform split-apply-combine operations on data sets for aggregating and transforming data
+* Make it easty to convert ragged, differently-indexed data in other Python and NumPy data structures into DataFrame objects
+* Intelligent label-based slicing, fancy indexing and subsetting of large data sets
+* Intuitive merging and joining data sets
+* Flexible reshaping and pivoting of data sets
+* Hierarchical labelling of axes
+* Robust IO tools for loading data from flat files
+* Time series-specific functionality such as date range generation and frequency conversion, moving window statistics, date shifting and lagging
+
+#### Why Choose Pandas?
+
+1. Pandas is fast. It can perform multiple operations with large datasets in seconds
+2. Pandas is a dependency of statsmodels, making it an important part of statistical computing ecosystem in python
+3. Pandas has been used extensively in production in financial applications
+
+#### Exploring Pandas Functions
+
+In the following sections try and run the following codes in Jupyter-Notebook
+
+``` python
+# Test if pandas was installed
+import pandas
+```
+
+``` python
+# Importing Sales Data
+pd.read_csv('sales.csv')
+
+# if an error occurs, double check if sales.csv is inside your project folder where .ipynb is located
+```
+
+#### DataFrames
+
+DataFrame is a collection of variables put together to share the same index
+* DataFrames are the workhorse of Pandas algorithms
+* Directly inspired from the R programming language
+* All series objects must have the same number of elements/rows
+* Must have unique column names
+
+#### Column Operations
+
+* Indexing is done using the square bracket notation ([ ]). 
+* Need to specify the column names.
+    ```python
+    df['name_of_column']
+    ```
+* New columns can also be created as a function of other columns using the square bracket notation ([ ]). 
+    ```python
+    df['new_column'] = df['old_column']
+    ```
+* To delete a specic column, use the drop() command and specify axis=1. Use inplace = True to make it permanent.
+    ``` python
+    df.drop('column_to_delete', axis =1)
+    df.drop('column_to_delete’, axis =1, inplace=True)
+    ```
+    
+```python
+# viewing/selecting one column
+print(df['Person'])
+# viewing/selecting multiple columns
+columns_to_read = ['Person','Sales']
+print(df[columns_to_read])
+```
+
+```python
+# creating new columns
+df['SalesTax'] = df['Sales'] * df['Tax']
+print(df)
+```
+
+```python
+# temporary Delete
+print(df.drop(['Sales', 'SalesTax'],axis=1))
+print(df)
+```
+
+```python
+# permanently delete column
+df.drop('SalesTax',axis=1, inplace = True)
+print(df)
+```
+
+#### Row Operations
+
+* Indexing is done using the iloc function and square bracket notation ([ ]). Need to specify the row indices.
+    ```python
+    df.iloc['row_numbers']
+    df.iloc[['row_numbers'],['column_numbers']]
+    ```
+• Using labels, indexing can be done using the loc function and square brackets([ ])
+    ``` python
+    df.loc['row_names']
+    df.loc[['row_names'],['column_names']]
+    ```
+• Logical indexing can be done using square brackets to select specific rows based on a logical array.
+    ``` python
+    df.loc['logical_column_vector']
+    df.loc[condition1 & condition2 & ...]
+    ```
+    
+``` python
+# Df Row Ops
+# reset df
+df = pd.read_csv("sales.csv")
+
+# select second row
+print(df.iloc[1])
+```
+
+``` python
+# select third to fourth row
+print(df.iloc[2:4])
+```
+
+``` python
+# create a new copy of df
+df2 = df.copy()
+print(df2)
+```
+
+```python
+# make Person the Labels of Each Row
+df2.set_index("Person", inplace = True)
+print(df2)
+```
+
+```python
+# Select the row for Sam
+print(df.iloc[0])
+print(df2.loc['Sam'])
+```
+
+```python
+# Select Rows for Sam and Amy
+print(df2.loc[['Sam','Amy']])
+```
+
+```python
+# Select Rows for Sam and Amy and
+# show only Company and Tax
+print(df2.loc[['Sam','Amy'],['Company','Tax']])
+```
+
+``` python
+# identify rows of where sales > 150
+print(df['Sales'])
+print(df['Sales'] >150)
+```
+
+```python
+# select rows of df where sales >150
+print(df[df['Sales'] >150])
+```
+
+``` python
+# select rows of df where Sales >150 and select only columns 
+#Person and Tax
+print(df[df['Sales']>150])
+```
+
+```python
+# select rows of df where Sales >150 and select only rows 
+#Company #= FB and select only columns Person and Tax
+print(df[(df['Sales'] >150) & (df['Company']=='FB')][['Person','Tax']])
+```
+
+#### Data Processing
+
+* Data is usually not in its final form needed for most of the analytics methodologies. 
+* Data in the real world is dirty
+    – incomplete: lacking attribute values, lacking certain attributes of interest, or containing only aggregate data (e.g., occupation=" ")
+    – noisy: containing errors or outliers (e.g., Salary="-10")
+    – inconsistent: containing discrepancies in codes or names (e.g., Age=“42” Birthday=“03/07/1997”)
+* Hence the need for Data Processing
+
+#### Data Transformation
+
+* Aggregation: summarization, data cube construction
+* Melting: Conversion of short to long datasets
+* Pivoting: Conversion of long datasets to short
+* Generalization: concept hierarchy climbing (numeric values for age or youth, adult senior)
+* Normalization: scaled to fall within a small, specified range
+    - min-max normalization
+    – z-score standardization
+* Attribute/feature construction
+    - New attributes constructed from the given ones
+    
+#### Data Aggregation Operations
+
+* Aggregation functions can be applied to groups of data based on values of specific columns.
+* Utilized the groupby() command
+* Output is a dataframe where the following sample operations can be done by group
+    * df.mean() #get mean
+    * df.std() #get standard dev
+    * df.min() #get min
+    * df.max() #get max
+    * df.count() # count the number of elements
+    * df.describe() # compute for various desc. stat
+    
+```python
+#Summarizing Data
+print(df.mean())
+print("\n")
+print(df.std())
+print("\n")
+print(df.min())
+print("\n")
+print(df.max())
+print("\n")
+print(df.count())
+print("\n")
+print(df.describe())
+```
+
+```python
+# groupby aggregation
+by_comp = df.groupby("Company")
+print(by_comp.mean())
+print("\n")
+print(by_comp.std())
+print("\n")
+print(by_comp.min())
+print("\n")
+print(by_comp.max())
+print("\n")
+print(by_comp.count())
+print("\n")
+print(by_comp.describe())
+```
+
+#### Melting
+
+* Melting is the process of transforming measures/facts into a single column/variable 
+* Melt by Mass and Velocity Example
+
+``` python
+print(df)
+dfmelted = df.copy()
+dfmelted = pd.melt(dfmelted, id_vars=['Company'], value_vars=['Sales', 'Person', 'Tax'])
+print(dfmelted)
+```
+
+#### Pivoting
+
+* Reshaped DataFrame organized by given index / column values.
+
+``` python
+print(df)
+dfpivot = df.copy()
+dfpivot = dfpivot.pivot(index='Person', columns='Company', values='Sales')
+print(dfpivot)
+```
+
+#### Merging
+
+Just like SQL Join
+
+```python
+# setup dataframes for joining
+df1 = pd.DataFrame({'lkey': ['foo', 'bar', 'baz', 'foo'],
+                    'value': [1, 2, 3, 5]})
+df2 = pd.DataFrame({'rkey': ['foo', 'bar', 'baz', 'foo'],
+                    'value': [5, 6, 7, 8]})
+print(df1)
+print(df2)
+```
+
+```python
+# merging df1 and df2 where id is df1.lkey and df2.lkey
+df1.merge(df2, left_on='lkey', right_on='rkey')
+```
+
+#### Concatenating
+
+Concatenating / appending objects along a particular axis 
+
+```python
+# setup dataframes for concatenating
+df1 = pd.DataFrame([['a', 1], ['b', 2]],
+                   columns=['letter', 'number'])
+df2 = pd.DataFrame([['c', 3], ['d', 4]],
+                   columns=['letter', 'number'])
+print(df1)
+print(df2)
+```
+
+```python
+# concatenating dataframes in row axis
+pd.concat([df1, df2])
+```
+
+```python
+# setup for concatenating
+df4 = pd.DataFrame([['bird', 'polly'], ['monkey', 'george']],
+                   columns=['animal', 'name'])
+print(df4)
+```
+
+```python
+# concatenating dataframes in column axis
+pd.concat([df1, df4], axis=1)
+```
+
+#### Binning
+
+* Binning: Process of transforming numerical variables into categorical counterparts. 
+    - An example is to bin values for Age into categories such as 1 to 18, 18 to 49, and 49 onwards. 
+* Rationale: Some Data Mining Algorithms run better on Categorical Data: e.g. Decision Trees
+* Allows easy identification of outliers
+
+**Two Types of Binning**
+* Equal-width (distance) partitioning
+    * Divides the range into 𝑁 intervals of equal size: uniform grid
+    * if A and B are the lowest and highest values of the attribute, the width of intervals will be: 𝑊 = (𝐵 – 𝐴)/𝑁.
+    * The most straightforward, but outliers may dominate presentation
+    * Skewed data is not handled well
+* Equal-depth (frequency) partitioning
+    * Divides the range into N intervals, each containing approximately same number of samples
+    * Good data scaling and outliers
+    
+``` python
+# Equal Width Binning
+import numpy as np
+df = pd.read_csv("sales.csv") #reset df
+dfbinned = df.copy()
+bin_labels_3 = ['Low', 'Medium', 'High']
+cutbins = np.arange(0,4,1)/3*(df['Tax'].max() - df['Tax'].min())+df['Tax'].min()
+print(cutbins)
+dfbinned['TaxDiscrete'] = pd.cut(df['Tax'], bins=cutbins, labels=bin_labels_3)
+dfbinned=dfbinned.fillna(value="Low")
+print(dfbinned)
+```
+
+```python
+# Equal Depth Binning
+dfbinned = df.copy()
+bin_labels_3 = ['Low', 'Medium', 'High']
+dfbinned['SalesDiscrete'] = pd.qcut(df['Sales'], q=3, labels=bin_labels_3)
+print(dfbinned)
+```
+
+#### Data Encoding
+
+* Encoding or continuation is the transformation of categorical variables to binary or numerical counterparts. 
+    * An example is to treat male or female for gender as 1 or 0. 
+* Some Data Mining Methodologies require all data to be 
+numerical, e.g. Linear Regression
+* Sometimes called Dummy Variables
+* Two Types
+    * Binary Encoding (Unsupervised) 
+    * Class-based Encoding (Supervised)
+    
+``` python
+df = pd.read_csv("sales.csv") #reset df
+dfencoding = df.copy()
+df['Company'].unique()
+dummies = pd.get_dummies(dfencoding['Company'], prefix='Company')
+dfencoding = pd.concat([dfencoding,dummies], axis=1)
+print(dfencoding)
+```
+
+#### Missing Data
+
+* Data is not always available
+    - E.g., many tuples have no recorded value for several attributes, such as 
+customer income in sales data
+* Missing data may be due to 
+    - equipment malfunction
+    - inconsistent with other recorded data and thus deleted
+    - data not entered due to misunderstanding
+    - data may not be considered important at the time of entry
+    - not register history or changes of the data
+* Missing data may need to be inferred.
+
+**Handling Missing Data**
+* Ignore the tuple: usually done when class label is missing (assuming the tasks in classification—not effective when the percentage of missing values per attribute varies considerably.)
+* Fill in the missing value manually: tedious + infeasible?
+* Data Imputation
+    - Fill in it automatically with
+* a global constant : e.g., “unknown”, a new class?
+* the attribute mean
+* the attribute mean for all samples belonging to the same class: 
+smarter
+
+```python
+# Setting up dataframe for missing data handling
+import numpy as np #dependent library
+df = pd.DataFrame([[np.nan, 2, np.nan, 0],
+                   [3, 4, np.nan, 1],
+                   [np.nan, np.nan, np.nan, np.nan],
+                   [np.nan, 3, np.nan, 4]],
+                  columns=list("ABCD"))
+print(df)
+```
+
+```python
+# Filling missing data
+df.fillna(0)
+```
+
+#### Data Reduction
+
+* Data may not be balanced. 
+* E.g.: Medical Dataset with 9900 negative cases and only 100 positive cases.
+* Solved by:
+    - Upsampling: Randomly select tuples from minority class to 
+increase samples (sometimes called Bootstrapping)
+    - Downsampling: Randomly select records from majority class to decrease samples
+    
+**Types of Sampling**
+* Simple Random Sampling
+    - There is an equal probability of selecting any particular item
+* Sampling without replacement
+    - As each item is selected, it is removed from the population
+* Sampling with replacement
+    - Objects are not removed from the population as they are selected 
+for the sample. 
+* In sampling with replacement, the same object can be picked up more than once
+* Stratified sampling
+    - Split the data into several partitions; then draw random samples from each partition
+    
+```python
+# simple random sampling
+dfsample = df.copy()
+dfsamplesubset = dfsample.sample(n=3,replace=True, 
+random_state=1)
+print(dfsamplesubset)
+```
+
+### Exercises
+
+In this exercise, we are using Automobile Dataset for data analysis. This Dataset has different characteristics of an auto such as body-style, wheel-base, engine-type, price, mileage, horsepower, etc.
+
+* Exercise 1: From the given dataset print the first and last five rows
+* Exercise 2: Print All Toyota Cars details
+* Exercise 3: Sort all cars by Price column. [See reference](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html)
+* Exercise 4: Count total cars per company. [See reference](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.groupby.SeriesGroupBy.value_counts.html?highlight=value_counts#pandas.core.groupby.SeriesGroupBy.value_counts)
+* Exercise 5: See all toyota cars with hatchback body style
+* Exercise 6: **Set** all **toyota** cars with **hatchback** body style with mileage=90
+* Exercise 7: Find the most expensive car company name
+* Exercise 8: Find each company’s Higesht price car
+* Exercise 9: Find the average mileage of each car making company
