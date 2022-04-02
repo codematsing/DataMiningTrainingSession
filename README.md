@@ -281,145 +281,154 @@ print('I can also concat ', _str)
 #### Data Types
 
 There are different kinds of datatypes in python:
+
 * integer
-    ``` python
-    x = 1
-    ```
+
+``` python
+x = 1
+```
+
 * float
-  ``` python
-  pi = 3.14159
-  half = 1/2
-  ```
+
+``` python
+pi = 3.14159
+half = 1/2
+```
+
 * string
-    ``` python
-    str1 = 'Hello'
-    str2 = "World"
-    
-    # accessing a character
-    print(str1[0]) #'H'
-    
-    # accessing 3rd to 4th character
-    print(str1[2:4]) # ll
 
-    # accessing 1st to 3rd
-    print(str1[:3]) # Hel
+``` python
+str1 = 'Hello'
+str2 = "World"
 
-    # accessing 3rd to last
-    print(str1[2:]) # llo
-    
-    # print string twice
-    print(str1*2) # HelloHello
+# accessing a character
+print(str1[0]) #'H'
 
-    # concatenate string
-    print(str1+"WORLD") # HelloWORLD
+# accessing 3rd to 4th character
+print(str1[2:4]) # ll
 
-    # what happens?
-    print(str1[-1])
-    ```
+# accessing 1st to 3rd
+print(str1[:3]) # Hel
+
+# accessing 3rd to last
+print(str1[2:]) # llo
+
+# print string twice
+print(str1*2) # HelloHello
+
+# concatenate string
+print(str1+"WORLD") # HelloWORLD
+
+# what happens?
+print(str1[-1])
+```
     
 <div style="page-break-after: always;"></div>
 
 * list:
-    ``` python
-    hairs = ['brown', 'blond', 'red']
-    weights = [1,2,3,4]
-    
-    #it can be heterogenous
-    info = ['Bob', 23, 'Male']
-    
-    # accessing an element
-    print(hairs[1]) # 'blond'
-    
-    # adding element/s
-    hairs.append('black')
-    print(hairs) #['brown', 'blond', 'red', 'black']
 
-    hairs.extend(hairs)
-    print(hairs) #['brown', 'blond', 'red', 'black', 'brown', 'blond', 'red', 'black']
+``` python
+hairs = ['brown', 'blond', 'red']
+weights = [1,2,3,4]
 
-    hairs.insert(1, 'violet')
-    print(hairs) #['brown', 'violet', 'blond', 'red', 'black', 'brown', 'blond', 'red', 'black']
-    
-    # removing element
-    hairs.remove('brown')
-    print(hairs)
-    
-    # sorting
-    hairs.sort()
-    print(hairs) #['black', 'black', 'blond', 'blond', 'brown', 'red', 'red', 'violet']
+#it can be heterogenous
+info = ['Bob', 23, 'Male']
 
-    hairs.reverse() 
-    print(hairs) #['violet', 'red', 'red', 'brown', 'blond', 'blond', 'black', 'black']
-    
-    # taking element/s
-    print(hairs.pop(1)) #red
-    print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black', 'black']
+# accessing an element
+print(hairs[1]) # 'blond'
 
-    print(hairs.pop()) #black (last one)
-    print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black']
-    ```
+# adding element/s
+hairs.append('black')
+print(hairs) #['brown', 'blond', 'red', 'black']
+
+hairs.extend(hairs)
+print(hairs) #['brown', 'blond', 'red', 'black', 'brown', 'blond', 'red', 'black']
+
+hairs.insert(1, 'violet')
+print(hairs) #['brown', 'violet', 'blond', 'red', 'black', 'brown', 'blond', 'red', 'black']
+
+# removing element
+hairs.remove('brown')
+print(hairs)
+
+# sorting
+hairs.sort()
+print(hairs) #['black', 'black', 'blond', 'blond', 'brown', 'red', 'red', 'violet']
+
+hairs.reverse() 
+print(hairs) #['violet', 'red', 'red', 'brown', 'blond', 'blond', 'black', 'black']
+
+# taking element/s
+print(hairs.pop(1)) #red
+print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black', 'black']
+
+print(hairs.pop()) #black (last one)
+print(hairs) #['violet', 'red', 'brown', 'blond', 'blond', 'black']
+```
     
 <div style="page-break-after: always;"></div>
 
 * tuple
     * the same with `list` BUT it is enclosed with parentheses `()`
-      ``` python
-      _tuple = ('abcd', 786 , 2.23, 'john', 70.2)
-      tinytuple = (123, 'john')
-      
-      # Prints complete list
-      print(_tuple) 
-      
-      # Prints first element of the list
-      print(_tuple[0]) 
-      
-      # Prints elements starting from 2nd till 3rd
-      print(_tuple[1:3]) 
 
-      # Prints elements starting from 3rd element
-      print(_tuple[2:]) 
+``` python
+_tuple = ('abcd', 786 , 2.23, 'john', 70.2)
+tinytuple = (123, 'john')
 
-      # Prints list two times
-      print(tinytuple * 2) 
+# Prints complete list
+print(_tuple) 
 
-      # Prints concatenated lists
-      print(_tuple + tinytuple) 
-      ```
-    * cannot be updated; no assignment operations
-      ``` python
-      # try
-      _tuple.insert(1) 
-      ```
+# Prints first element of the list
+print(_tuple[0]) 
+
+# Prints elements starting from 2nd till 3rd
+print(_tuple[1:3]) 
+
+# Prints elements starting from 3rd element
+print(_tuple[2:]) 
+
+# Prints list two times
+print(tinytuple * 2) 
+
+# Prints concatenated lists
+print(_tuple + tinytuple) 
+```
+* cannot be updated; no assignment operations
+``` python
+# try
+_tuple.insert(1) 
+```
     
 <div style="page-break-after: always;"></div>
 
 * dictionary
     * kind of hash table type
     * key-value pair. key can be any data type but usually numbers and strings
-  ``` python
-  dictio = {}
 
-  dictio['one'] = 'This is one'
-  dictio[2] = 'This is two'
-  
-  tinydictio = {'name': 'john', 'code':6734, 'dept': 'sales'}
+``` python
+dictio = {}
 
-  print(dictio['one']) #'This is one'
+dictio['one'] = 'This is one'
+dictio[2] = 'This is two'
 
-  print(dictio[2]) #'This is two'
+tinydictio = {'name': 'john', 'code':6734, 'dept': 'sales'}
 
-  # Prints complete dictionary
-  print(tinydictio) 
-  
-  # Prints dictionary items
-  print(tinydictio.items())
+print(dictio['one']) #'This is one'
 
-  # Prints all the keys
-  print(tinydictio.keys()) 
+print(dictio[2]) #'This is two'
 
-  # Prints all the values
-  print(tinydictio.values()) 
-  ```
+# Prints complete dictionary
+print(tinydictio) 
+
+# Prints dictionary items
+print(tinydictio.items())
+
+# Prints all the keys
+print(tinydictio.keys()) 
+
+# Prints all the values
+print(tinydictio.values()) 
+```
     
 <div style="page-break-after: always;"></div>
 
@@ -512,6 +521,7 @@ for a in range(10):
 ```
 
 * Break
+
 ``` python
 for a in range(10)
     if a == 5:
@@ -578,41 +588,43 @@ print(type(y))
 ### Input Method Scripts
 
 * create a file `input_method.py` in our working directory
-    ``` python
 
-    from sys import argv
-    script, b, c, d = argv
+``` python
 
-    print(argv)
-    print("script: ", script)
-    print("second input: ", b)
-    print("third input: ", c)
-    print("fourth input: ", d)
-    ```
+from sys import argv
+script, b, c, d = argv
+
+print(argv)
+print("script: ", script)
+print("second input: ", b)
+print("third input: ", c)
+print("fourth input: ", d)
+```
 
 <div style="page-break-after: always;"></div>
 
 ### Writing Files
 
 * create a file `writing_files.py` in our working directory
-    ``` python
-    from sys import argv
-    from os.path import exists
 
-    script, from_file, to_file = argv
+``` python
+from sys import argv
+from os.path import exists
 
-    input = open(from_file)
-    indata = input.read()
+script, from_file, to_file = argv
 
-    if not exists(to_file):
-        output = open(to_file, 'w')
-        output.write(indata)
-        output.close()
-    else:
-        print("already_exists")
+input = open(from_file)
+indata = input.read()
 
-    input.close()
-    ```
+if not exists(to_file):
+    output = open(to_file, 'w')
+    output.write(indata)
+    output.close()
+else:
+    print("already_exists")
+
+input.close()
+```
 
 <div style="page-break-after: always;"></div>
 
@@ -683,7 +695,7 @@ _list = [-25, 50, 25, 100]
     * calls a function to compute quotient
     * calls a function to print results of previous functions
 
-```python
+``` python
 # Test
 a = 1
 b = 2
@@ -693,6 +705,7 @@ difference = -1
 product = 2
 quotient = 0.50
 ```
+
 * Write a program `grades.py` that prints the equivalent grade in letters.
     * \>= 90 is A
     * [80, 90) is B
