@@ -1255,13 +1255,13 @@ In this exercise, we are using Automobile Dataset for data analysis. This Datase
 # Submission Instructions
 
 * For [Exercise 1](#exercise-1)
-    1. For items 1-4, place solutions in Jupyter Notebook with filename: <LastName>_<FirstInital>_Exercise1.ipynb
+    1. For items 1-4, place solutions in Jupyter Notebook with filename: \<LastName\>_\<FirstInital\>_Exercise1.ipynb
         * Example: Solis_S_Execise1.ipynb
-    2. For items 5-7, create the .py files for the solutions and zip them under filename: <LastName>_<FirstInitial>_Exercise1.zip
+    2. For items 5-7, create the .py files for the solutions and zip them under filename: \<LastName\>_\<FirstInital\>_Exercise1.zip
         * Example: Solis_S_Execise1.zip
     3. Submit all files to [Submission Bin](https://forms.gle/8gZpzcUtyboect397)
 
 * For [Exercise 2](#exercise-2)
-    1. Place solutions in Jupyter Notebook with filename: <LastName>_<FirstInital>_Exercise2.ipynb
+    1. Place solutions in Jupyter Notebook with filename: \<LastName\>_\<FirstInital\>_Exercise2.ipynb
         * Example: Solis_S_Execise2.ipynb
     2. Submit all files to [Submission Bin](https://forms.gle/sEFXViKfMbaCiGLZ9)
