@@ -1232,9 +1232,9 @@ for the sample.
 
 ```python
 # simple random sampling
+df = pd.read_csv('sales.csv') #reset df
 dfsample = df.copy()
-dfsamplesubset = dfsample.sample(n=3,replace=True, 
-random_state=1)
+dfsamplesubset = dfsample.sample(n=3,replace=True, random_state=1)
 print(dfsamplesubset)
 ```
 
