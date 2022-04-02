@@ -41,6 +41,7 @@ pandoc-latex-environment:
 * [Requirements Installation](#python-installation)
 * [Core Python](#what-is-python)
 * [Exploratory Data Analysis](#revisit)
+* [Submission Bin](#submission-instructions)
 
 # Data Mining Training Session
 
@@ -645,9 +646,11 @@ input.close()
 
 ### Exercise 1
 
+*See [Submission Instructions](#submission-instructions)*
+
 _Using the concepts presented in the previous secion, evaluate how to answer the following problems:_
 
-* Given the side length of a triangle a = 122, b = 22, c = 120, assign to variables `area` and perimeter `s` the following computation based on the Heron's formula and print the results for the following variables.
+1.  Given the side length of a triangle a = 122, b = 22, c = 120, assign to variables `area` and perimeter `s` the following computation based on the Heron's formula and print the results for the following variables.
 
 ![](https://www.basic-mathematics.com/images/Heron-s-formula.png)
 
@@ -662,7 +665,7 @@ s = 132
 area = 1320
 ```
 
-* Given arguments P, Y, R, calculate the monthly payments you would have to make over Y years to pay off P dollar loan at R percent interest compounded monthly. The formula is shown below:
+2.  Given arguments P, Y, R, calculate the monthly payments you would have to make over Y years to pay off P dollar loan at R percent interest compounded monthly. The formula is shown below:
 
 ![](./media/exercise1.png)
 
@@ -675,7 +678,7 @@ R = 120
 Payment = 41.98862770388198
 ```
 
-* Write a function that adds one to all even numbers on this list
+3. Write a function that adds one to all even numbers on this list
 
 ``` python
 x_list = [11, 6, 5, 7, 10]
@@ -689,7 +692,7 @@ for counter, value in enumerate(value_list):
     print(counter, value)
 ```
 
-* Write a function that checks all values in list and then prints out the string relative to its value as indicated in the figure below. Note, if it touches the border, it should print "Border"
+4. Write a function that checks all values in list and then prints out the string relative to its value as indicated in the figure below. Note, if it touches the border, it should print "Border"
 
 ![](./media/exercise4.png)
 
@@ -702,7 +705,7 @@ _list = [-25, 50, 25, 100]
 # 100 Out of range
 ```
 
-* Write a program `arithmetic.py`
+5. Write a program `arithmetic.py`
     * takes two inputs a, b in the command line
     * calls a function to compute sum
     * calls a function to compute difference
@@ -721,14 +724,14 @@ product = 2
 quotient = 0.50
 ```
 
-* Write a program `grades.py` that prints the equivalent grade in letters.
+6. Write a program `grades.py` that prints the equivalent grade in letters.
     * \>= 90 is A
     * [80, 90) is B
     * [70, 80) is C
     * [60, 70) is D
     * < 60 is E
 
-* Write a program `consonants.py` 
+7. Write a program `consonants.py` 
     * reads a file via command line 
     * returns only the consonants of the file and sorted them alphabetically
     *bonus: remove repeating characters*
@@ -1235,7 +1238,7 @@ random_state=1)
 print(dfsamplesubset)
 ```
 
-### Exercises
+### Exercise 2
 
 In this exercise, we are using Automobile Dataset for data analysis. This Dataset has different characteristics of an auto such as body-style, wheel-base, engine-type, price, mileage, horsepower, etc.
 
@@ -1248,3 +1251,17 @@ In this exercise, we are using Automobile Dataset for data analysis. This Datase
 * Exercise 7: Find the most expensive car company name
 * Exercise 8: Find each company’s Higesht price car
 * Exercise 9: Find the average mileage of each car making company
+
+# Submission Instructions
+
+* For [Exercise 1](#exercise-1)
+    1. For items 1-4, place solutions in Jupyter Notebook with filename: <LastName>_<FirstInital>_Exercise1.ipynb
+        * Example: Solis_S_Execise1.ipynb
+    2. For items 5-7, create the .py files for the solutions and zip them under filename: <LastName>_<FirstInitial>_Exercise1.zip
+        * Example: Solis_S_Execise1.zip
+    3. Submit all files to [Submission Bin](https://forms.gle/8gZpzcUtyboect397)
+
+* For [Exercise 2](#exercise-2)
+    1. Place solutions in Jupyter Notebook with filename: <LastName>_<FirstInital>_Exercise2.ipynb
+        * Example: Solis_S_Execise2.ipynb
+    2. Submit all files to [Submission Bin](https://forms.gle/sEFXViKfMbaCiGLZ9)
