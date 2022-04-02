@@ -805,12 +805,12 @@ In the following sections try and run the following codes in Jupyter-Notebook
 
 ``` python
 # Test if pandas was installed
-import pandas
+import pandas as pd
 ```
 
 ``` python
 # Importing Sales Data
-pd.read_csv('sales.csv')
+df = pd.read_csv('sales.csv')
 
 # if an error occurs, double check if sales.csv is inside your project folder where .ipynb is located
 ```
@@ -839,6 +839,8 @@ DataFrame is a collection of variables put together to share the same index
     df.drop('column_to_delete', axis =1)
     df.drop('column_to_delete’, axis =1, inplace=True)
     ```
+    
+***try this out***
     
 ```python
 # viewing/selecting one column
@@ -884,6 +886,8 @@ print(df)
     df.loc[condition1 & condition2 & ...]
     ```
     
+***try this out***
+
 ``` python
 # Df Row Ops
 # reset df
@@ -982,6 +986,8 @@ print(df[(df['Sales'] >150) & (df['Company']=='FB')][['Person','Tax']])
     * df.max() #get max
     * df.count() # count the number of elements
     * df.describe() # compute for various desc. stat
+
+***try this out***
     
 ```python
 #Summarizing Data
@@ -1019,6 +1025,8 @@ print(by_comp.describe())
 * Melting is the process of transforming measures/facts into a single column/variable 
 * Melt by Mass and Velocity Example
 
+***try this out***
+
 ``` python
 print(df)
 dfmelted = df.copy()
@@ -1030,6 +1038,8 @@ print(dfmelted)
 
 * Reshaped DataFrame organized by given index / column values.
 
+***try this out***
+
 ``` python
 print(df)
 dfpivot = df.copy()
@@ -1040,6 +1050,8 @@ print(dfpivot)
 #### Merging
 
 Just like SQL Join
+
+***try this out***
 
 ```python
 # setup dataframes for joining
@@ -1059,6 +1071,8 @@ df1.merge(df2, left_on='lkey', right_on='rkey')
 #### Concatenating
 
 Concatenating / appending objects along a particular axis 
+
+***try this out***
 
 ```python
 # setup dataframes for concatenating
@@ -1104,6 +1118,8 @@ pd.concat([df1, df4], axis=1)
     * Divides the range into N intervals, each containing approximately same number of samples
     * Good data scaling and outliers
     
+***try this out***
+
 ``` python
 # Equal Width Binning
 import numpy as np
@@ -1136,6 +1152,8 @@ numerical, e.g. Linear Regression
     * Binary Encoding (Unsupervised) 
     * Class-based Encoding (Supervised)
     
+***try this out***
+
 ``` python
 df = pd.read_csv("sales.csv") #reset df
 dfencoding = df.copy()
@@ -1167,6 +1185,8 @@ customer income in sales data
 * the attribute mean
 * the attribute mean for all samples belonging to the same class: 
 smarter
+
+***try this out***
 
 ```python
 # Setting up dataframe for missing data handling
@@ -1205,6 +1225,8 @@ for the sample.
 * Stratified sampling
     - Split the data into several partitions; then draw random samples from each partition
     
+***try this out***
+
 ```python
 # simple random sampling
 dfsample = df.copy()
