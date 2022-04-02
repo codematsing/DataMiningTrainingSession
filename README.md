@@ -942,7 +942,7 @@ print(df['Sales'] >150)
 
 ```python
 # select rows of df where sales >150
-print(df[df['Sales'] >150])
+print(df[df['Sales'] >150][['Person', 'Tax']])
 ```
 
 ``` python
