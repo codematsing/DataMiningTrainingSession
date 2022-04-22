@@ -1469,6 +1469,13 @@ The goal of regression is to obtain the coefficient estimates that the linear mo
 * Deviation
 ![Deviation](./media/2022-04-22-18-30-30.png)
 
+* Correlation
+  * measure indicating extent to which two or more variables fluctuate together
+  * *correlation is not causation*
+  * causation - relation between something that happens and the thing that causes it
+![Correlation](./media/correlation.png)
+![Correlation Vs. Causation](./media/correlation_v_causation.png)
+
 ##### Terms
 
 * Residual
@@ -1500,14 +1507,42 @@ The goal of regression is to obtain the coefficient estimates that the linear mo
   ![Different R-Squared Comparison](./media/2022-04-22-18-59-47.png)
   The regression model on the left accounts for 38.0% of the variance while the one on the right accounts for 87.4%. The more variance that is accounted for by the regression model the closer the data points will fall to the fitted regression line. 
   
+#### Data Cleaning for Machine Learning Modelling
+
+* Data Filtering
+* Aggregate Values
+* Missing Value Treatment
+  * in real world, data can have missing values
+  * machine learning algorithms do not support missing data
+  * solution:
+    * remove rows with missing data
+    * replace missing values with mean / median values; numerical: mean / median; categorical: mode
+    * impute with zero
+    * segment based imputation; need domain knowledge; i.e. location-based average rainfall
+* Outlier Treatment
+  * impute outliers
+  * cap or floor: identify `3*P99` and `0.3*P1`
+  * exponential smoothing: extrapolate curve `[P95,P99]` and `[P1, P5]`
+  * sigma approach: identify outliers falling outside n standard dev away from mean
+* Adjust based on Seasonality
+  * calculate multiplication factor for each month
+![Seasonality Multiplication Factor](./media/2022-04-22.png)
+![Seasonality Example](./media/seasonality_1.png)
+![Seasonality Computation](./media/seasonality_2.png)
+* Variable Transformation
+  * Bivariate analysis - simultaneous analysis of two variables. Explores the relationship between two variables
+![](./media/variable_transformation.png)
+![](./media/variable_transformation_formula.png)
+* Variable Reduction
+  * Variables with single unique value
+  * Variables with low fill rate
+  * Variables with regulatory issue (personal information)
+  * Variables with no business sense
+* Address Multicollinearity
+  * Remove highly correlated independent variables by looking at the correlation matrix and VIF
 #### Multiple Linear Regression
 
 more than one predictor variables are used to predict the response variable
 
 ![Linear Regression Formula](./media/2022-04-22-16-41-27.png)
 ![Multi-Linear Regression Formula](./media/2022-04-22-19-40-36.png)
-
-#### Data Cleaning for Machine Learning Modelling
-
-* Data Filtering
-* Aggregate Values
