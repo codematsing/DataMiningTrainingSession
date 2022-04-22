@@ -1441,7 +1441,7 @@ title Machine Learning Techniques
     * task of predicting continuous quantity
     * may predict discrete value BUT in form of integer quantity (1 or 0)
     * evaluated through root mean squared error
-    ![RMSE Formula](./2022-04-22-15-23-12.png)
+    ![RMSE Formula](./media/2022-04-22-15-23-12.png)
     * GUI tools: [Mnitab](https://www.minitab.com/en-us/products/minitab/)
     
 #### Linear Regression
@@ -1492,6 +1492,9 @@ The goal of regression is to obtain the coefficient estimates that the linear mo
 * Hypothesis Test
   * action where analyst tests an assumption regarding a parameter
 ![Hypothesis Test](./media/2022-04-22-18-43-43.png)
+* F-statistic
+  * Used to decide to support or reject null hypothesis
+  * Reject null hypothesis if F-value > F critical value
 * P-value
   * statistical measurement used to validate hypothesis test against observed data
   * the lower the p-value, the greater the statistical significance of the observed difference
@@ -1531,8 +1534,12 @@ The goal of regression is to obtain the coefficient estimates that the linear mo
 ![Seasonality Computation](./media/seasonality_2.png)
 * Variable Transformation
   * Bivariate analysis - simultaneous analysis of two variables. Explores the relationship between two variables
-![](./media/variable_transformation.png)
-![](./media/variable_transformation_formula.png)
+![Non-linear Relationships](./media/variable_transformation.png)
+![Non-linear Formula Transformation](./media/2022-04-23-00-35-50.png)
+* Replace categorical variables
+  * Dummy variables - artificial variables representing categorical independent variables
+  * Make a separate column for each category and take 0 or 1 value
+  ![Dummy Variable Replacement](./media/2022-04-23-00-14-28.png)
 * Variable Reduction
   * Variables with single unique value
   * Variables with low fill rate
@@ -1546,3 +1553,7 @@ more than one predictor variables are used to predict the response variable
 
 ![Linear Regression Formula](./media/2022-04-22-16-41-27.png)
 ![Multi-Linear Regression Formula](./media/2022-04-22-19-40-36.png)
+
+#### Reading Regression Analysis
+![](./media/2022-04-22-23-41-39.png)
+![](./media/2022-04-22-23-41-23.png)
