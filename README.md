@@ -1557,3 +1557,7 @@ more than one predictor variables are used to predict the response variable
 #### Reading Regression Analysis
 ![](./media/2022-04-22-23-41-39.png)
 ![](./media/2022-04-22-23-41-23.png)
+
+#### Coding Exercise
+
+Access Jupyter Notebook [here](./Linear%20Regression.ipynb)
