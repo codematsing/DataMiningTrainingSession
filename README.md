@@ -1,9 +1,4 @@
 ---
-note_type: reference
-writing_type: draft
-toc: true
-toc-own-page: true
-listings-no-page-break: true
 linkcolor: blue
 date: Mar 12, 2022
 title: 'Python Tutorial'
@@ -13,28 +8,7 @@ titlepage: true
 titlepage-background: '/home/sam/.pandoc/backgrounds/background7.pdf'
 titlepage-text-color: '546f7a'
 titlepage-rule-color: '546f7a'
-page-background: '/home/sam/.pandoc/backgrounds/background7.pdf'
 page-background-opacity: 0.15
-header-includes:
-- |
-  ```{=latex}
-  \usepackage{awesomebox}
-  \usepackage{tcolorbox}
-
-  \newtcolorbox{info-box}{colback=cyan!5!white,arc=0pt,outer arc=0pt,colframe=cyan!60!black}
-  \newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
-  \newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
-  ```
-pandoc-latex-environment:
-  noteblock: [note]
-  tipblock: [tip]
-  warningblock: [warning]
-  cautionblock: [caution]
-  importantblock: [important]
-  tcolorbox: [box]
-  info-box: [info]
-  warning-box: [warn]
-  error-box: [error]
 ---
 # Table of Contents
 * [Introduction](#data-mining-training-session)
@@ -44,45 +18,6 @@ pandoc-latex-environment:
 * [Submission Bin](#submission-instructions)
 
 # Data Mining Training Session
-
-<div style="page-break-after: always;"></div>
-
-## About the Facilitator
-
-* Background
-  * BS Electronics and Communications Engineering
-  * \*MS Industrial Engineering (Information Systems)
-  * Licensed Electronics Engineer
-* Work
-    * Nokia Technology Philippines Inc.
-      * Software Engineer for Base Stations
-      * Scrum Master
-      * Nokia Insider
-      * 1st Placer IoE Hackathon
-    * Big Data Project
-      * Systems Developer
-      * Webscraped supermarket and real estate prices
-      * Analytics Platform
-      * Consultant for Big Data Integration
-    * DTI Inventory Management System
-      * Lead Developer
-      * Inventory Management System
-      * Monitoring and consolidat
-    * ISU ODeSSee
-      * Information Systems Analyst
-      * Data Trends for both Typhoon-related disasters and Covid-19 Trends
-      * ETL for geospatial analysis
-    * PGH Ivermectin Study
-      * Project Development Officer
-      * Clinical Trial Electronic Data Capture
-    * iCity: Digital Business Locator
-      * Information Systems Analyst
-      * Data Cleaning, Processing, Concept
-* Others
-    * *I was able to deliver these projects using only Python*
-    * **Self-pledged pythonista**
-
-<div style="page-break-after: always;"></div>
 
 ## Gauging the Baseline
 
@@ -95,6 +30,8 @@ Go to menti.com
 * Learn basic python
 * Introduction to python tools for data mining
 * Regression Analysis
+
+<div style="page-break-after: always;"></div>
 
 ## Python installation:
 
@@ -143,7 +80,7 @@ Follow the instructions below to install the bare minimum for this course
 * Two ways to use interpreter
   * command line
   * script mode
-  * \* notebook - just command line
+  * *notebook* - just command line
 
 <div style="page-break-after: always;"></div>
 
@@ -201,6 +138,8 @@ n = 17
 pi = 3.14159
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Statements
 
 an instruction that the Python interpreter can execute.
@@ -242,6 +181,8 @@ Operators are special symbols that represent computations like addition and mult
 * equal: `==`
 * not equal: `!=`
 
+<div style="page-break-after: always;"></div>
+
 #### Formatted Printing
 
 ``` python
@@ -272,6 +213,8 @@ print(formatter % (1,2,3,4))
 
 print(formatter % ('one', 'two', 'three', 'four'))
 ```
+
+<div style="page-break-after: always;"></div>
 
 ``` python
 print('Print statements use single quotes')
@@ -373,6 +316,8 @@ print(hairs) #['black', 'black', 'blond', 'blond', 'brown', 'red', 'red', 'viole
 
 hairs.reverse() 
 print(hairs) #['violet', 'red', 'red', 'brown', 'blond', 'blond', 'black', 'black']
+<div style="page-break-after: always;"></div>
+
 
 # taking element/s
 print(hairs.pop(1)) #red
@@ -705,6 +650,8 @@ _list = [-25, 50, 25, 100]
 # 100 Out of range
 ```
 
+<div style="page-break-after: always;"></div>
+
 5. Write a program `arithmetic.py`
     * takes two inputs a, b in the command line
     * calls a function to compute sum
@@ -741,6 +688,8 @@ quotient = 0.50
     the quick brown fox jumps over the lazy dog
     ```
     
+<div style="page-break-after: always;"></div>
+
 ### Obj: Learn and apply essential Data Science libraries used for data exploration, processing and transformation for further analysis
 
 #### Revisit
@@ -763,6 +712,8 @@ In the next sessions, we will using [Jupyter-Notebook](https://jupyter.org/about
    *this will install the different libraries*
     ![](docs/media/2022-04-02-22-50-18.png)
     ![](docs/media/2022-04-02-22-52-44.png)
+
+<div style="page-break-after: always;"></div>
 
 #### What is Pandas?
 
@@ -802,6 +753,8 @@ DataFrame - 2-dimensional
 2. Pandas is a dependency of statsmodels, making it an important part of statistical computing ecosystem in python
 3. Pandas has been used extensively in production in financial applications
 
+<div style="page-break-after: always;"></div>
+
 #### Exploring Pandas Functions
 
 In the following sections try and run the following codes in Jupyter-Notebook
@@ -825,6 +778,8 @@ DataFrame is a collection of variables put together to share the same index
 * Directly inspired from the R programming language
 * All series objects must have the same number of elements/rows
 * Must have unique column names
+
+<div style="page-break-after: always;"></div>
 
 #### Column Operations
 
@@ -870,6 +825,8 @@ print(df)
 df.drop('SalesTax',axis=1, inplace = True)
 print(df)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Row Operations
 
@@ -957,6 +914,8 @@ print(df[df['Sales']>150][['Person', 'Tax']])
 print(df[(df['Sales'] >150) & (df['Company']=='FB')][['Person','Tax']])
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Data Processing
 
 * Data is usually not in its final form needed for most of the analytics methodologies. 
@@ -989,6 +948,8 @@ print(df[(df['Sales'] >150) & (df['Company']=='FB')][['Person','Tax']])
     * df.max() #get max
     * df.count() # count the number of elements
     * df.describe() # compute for various desc. stat
+
+<div style="page-break-after: always;"></div>
 
 ***try this out***
     
@@ -1023,6 +984,8 @@ print("\n")
 print(by_comp.describe())
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Melting
 
 * Melting is the process of transforming measures/facts into a single column/variable 
@@ -1049,6 +1012,8 @@ dfpivot = df.copy()
 dfpivot = dfpivot.pivot(index='Person', columns='Company', values='Sales')
 print(dfpivot)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Merging
 
@@ -1104,6 +1069,8 @@ print(df4)
 pd.concat([df1, df4], axis=1)
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Binning
 
 * Binning: Process of transforming numerical variables into categorical counterparts. 
@@ -1144,6 +1111,8 @@ dfbinned['SalesDiscrete'] = pd.qcut(df['Sales'], q=3, labels=bin_labels_3)
 print(dfbinned)
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Data Encoding
 
 * Encoding or continuation is the transformation of categorical variables to binary or numerical counterparts. 
@@ -1165,6 +1134,8 @@ dummies = pd.get_dummies(dfencoding['Company'], prefix='Company')
 dfencoding = pd.concat([dfencoding,dummies], axis=1)
 print(dfencoding)
 ```
+
+<div style="page-break-after: always;"></div>
 
 #### Missing Data
 
@@ -1207,6 +1178,8 @@ print(df)
 df.fillna(0)
 ```
 
+<div style="page-break-after: always;"></div>
+
 #### Data Reduction
 
 * Data may not be balanced. 
@@ -1238,6 +1211,8 @@ dfsamplesubset = dfsample.sample(n=3,replace=True, random_state=1)
 print(dfsamplesubset)
 ```
 
+<div style="page-break-after: always;"></div>
+
 ### Exercise 2
 
 In this exercise, we are using Automobile Dataset for data analysis. This Dataset has different characteristics of an auto such as body-style, wheel-base, engine-type, price, mileage, horsepower, etc.
@@ -1252,6 +1227,8 @@ In this exercise, we are using Automobile Dataset for data analysis. This Datase
 * Exercise 8: Find each company’s Higesht price car
 * Exercise 9: Find the average mileage of each car making company
 
+<div style="page-break-after: always;"></div>
+
 # Submission Instructions
 
 * For [Exercise 1](#exercise-1)
@@ -1265,3 +1242,272 @@ In this exercise, we are using Automobile Dataset for data analysis. This Datase
     1. Place solutions in Jupyter Notebook with filename: \<LastName\>_\<FirstInital\>_Exercise2.ipynb
         * Example: Solis_S_Execise2.ipynb
     2. Submit all files to [Submission Bin](https://forms.gle/sEFXViKfMbaCiGLZ9)
+
+### Obj: Apply python for data mining applications
+
+
+<!-- DON'T FORGET TO RENAME FILENAME
+AND REMOVE PLANTUML AFTER -->
+```plantuml { .plantuml plantuml-filename=media/plantuml.png }
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam arrowThickness 0.7
+skinparam packageTitleAlignment left
+skinparam usecaseBorderThickness 0.4
+skinparam rectangleBorderThickness 1
+skinparam actorStyle awesome
+
+title Agenda
+
+(Revisit Process of Data Mining) -> (Revisit Data Cleaning)
+(Revisit Data Cleaning) -> (Types of Machine Learning)
+(Types of Machine Learning) -> (Regression)
+(Regression) -> (Linear Regression)
+(Linear Regression) -> (Logistic Regression)
+
+@enduml
+```
+
+<!-- DON'T FORGET TO RENAME FILENAME
+AND REMOVE PLANTUML AFTER -->
+```plantuml { .plantuml plantuml-filename=media/plantuml.png }
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam arrowThickness 0.7
+skinparam packageTitleAlignment left
+skinparam usecaseBorderThickness 0.4
+skinparam rectangleBorderThickness 1
+skinparam actorStyle awesome
+
+title Process of Data Mining
+
+(collection) -> (understanding)
+(understanding) -> (preparation)
+(preparation) -> (modelling)
+(modelling) -> (evaluation)
+
+@enduml
+```
+
+<!-- DON'T FORGET TO RENAME FILENAME
+AND REMOVE PLANTUML AFTER -->
+```plantuml { .plantuml plantuml-filename=media/plantuml.png }
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam arrowThickness 0.7
+skinparam packageTitleAlignment left
+skinparam usecaseBorderThickness 0.4
+skinparam rectangleBorderThickness 1
+skinparam actorStyle awesome
+
+title Process of Data Mining and tools
+
+card collection [
+<b>collection</b>
+---
+<b>concepts</b>
+data dictionary
+databases
+file formats
+---
+<b>tools</b>
+python (selenium, beautiful soup, scrapy)
+google
+database management systems
+]
+
+
+card understanding [
+<b>understanding</b>
+---
+<b>concepts</b>
+domain knowledge
+univariate statistics
+---
+<b>tools</b>
+excel tables and graphs
+python (pandas)
+R
+]
+
+card preparation [
+<b>preparation</b>
+---
+<b>concepts</b>
+regular expressions
+outlier treatment
+missing value imputation
+data transformation rules
+---
+<b>tools</b>
+excel
+python (pandas)
+R
+]
+
+card modelling [
+<b>modelling</b>
+---
+<b>concepts</b>
+statistics
+machine learning techniques
+test-train split
+performance comparison
+---
+<b>tools</b>
+minitab
+weka
+python (pandas, scikitlearn, statsmodel, etc)
+R
+]
+
+card evaluation [
+<b>evaluation</b>
+--
+<b>concepts</b>
+best model fit
+graph and visualizations
+---
+<b>tools</b>
+tableau
+power BI
+excel
+web developmenet frameworks
+]
+
+collection -> understanding 
+understanding -> preparation
+preparation -> modelling
+modelling -> evaluation
+
+@enduml
+```
+
+![](2022-04-22-19-36-04.png)
+
+```plantuml { .plantuml plantuml-filename=media/plantuml.png }
+@startwbs
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam arrowThickness 0.7
+skinparam packageTitleAlignment left
+skinparam usecaseBorderThickness 0.4
+skinparam rectangleBorderThickness 1
+
+title Machine Learning Techniques
+
+* Machine Learning Techniques
+** Supervised Learning
+***< Classification
+****< Support Vector Machine
+*** Regression
+****< Linear Regression
+**** Logistic Regression
+** Unsupervised Learning
+*** Clustering
+
+@endwbs
+```
+
+#### Supervised vs. Unsupervised
+* Supervised Machine Learning
+  * machine learning approach that’s defined by its use of labeled datasets
+  * *goal*:  predict outcome
+  * *application*:  spam detection, sentiment analysis, forecasting and predictions
+  * *complexity*:  calculated through R and python
+  * *drawbacks*:  time-consuming to train
+* Unsupervised Machine Learning
+  * analyzes and clusters unlabeled data sets
+  * *goal*:  get insights
+  * *application*:  anomaly detection, recommendation engines,
+  * *complexity*:  powerful tools for working with large amounts of data
+  * *drawbacks*:  more prone to inaccurate results without human intervention to validate output
+
+  #### Classification vs. Regression
+  * Classification
+    * predicting discrete class label
+    * usually categorical
+    * evaluated through accuracy
+    ![Accuracy Formula](./media/2022-04-22-15-22-08.png) 
+    * GUI tools: [Weka](https://www.cs.waikato.ac.nz/ml/weka/)
+  * Regression
+    * task of predicting continuous quantity
+    * may predict discrete value BUT in form of integer quantity (1 or 0)
+    * evaluated through root mean squared error
+    ![RMSE Formula](./2022-04-22-15-23-12.png)
+    * GUI tools: [Mnitab](https://www.minitab.com/en-us/products/minitab/)
+    
+#### Linear Regression
+
+![Linear Equation Formula](./media/2022-04-22-15-30-00.png)
+
+Linear Regression is a method to predict dependent variable (Y) based on values of independent variables (X). It can be used for the cases where we want to predict some continuous quantity
+
+![Linear Regression Graph](./media/2022-04-22-16-40-53.png)
+
+![Linear Regression Formula](./media/2022-04-22-16-41-27.png)
+
+The goal of regression is to obtain the coefficient estimates that the linear model fits best to available data
+
+##### Statistics Review
+* Mean, median, mode
+  * mean: average
+  * median: middle value
+  * mode: most frequent value
+![Mean, Median, Mode](./media/2022-04-22-18-32-18.png)
+
+* Variance
+![Variance](./media/2022-04-22-18-31-46.png)
+
+* Deviation
+![Deviation](./media/2022-04-22-18-30-30.png)
+
+##### Terms
+
+* Residual
+  * difference [distance] between residual ith observed response and the ith predicted response
+![Residuals](./media/2022-04-22-18-14-44.png)
+* Residual Sum of Squares (RSS)
+  * measures the level of *variance* in the error term
+![RSS Formula](./media/2022-04-22-18-19-42.png)
+* Residual Standard Error
+  * used to measure how well a regression model fits the dataset
+  * measures the *standard deviation* of residuals in a regression model
+  * the smaller the standard error, the better model fits the data
+![RSE Formula](./media/2022-04-22-18-22-17.png)
+* Hypothesis Test
+  * action where analyst tests an assumption regarding a parameter
+![Hypothesis Test](./media/2022-04-22-18-43-43.png)
+* P-value
+  * statistical measurement used to validate hypothesis test against observed data
+  * the lower the p-value, the greater the statistical significance of the observed difference
+  * rule of thumb: less than 5% (0.005)
+* Quality of Fit
+  * quality of linear regression fit is assessed by RSE and R-squared statistics
+  * RSE: average amount that the response will deviate from true regression line
+![small RSE](./media/2022-04-22-19-01-52.png)
+![large RSE](./media/2022-04-22-19-02-20.png)
+  * R-Squared: percentage of response variable variation that explains the linear model; higher R-squared, the better fit
+  ![R-Squared Formula](./media/2022-04-22-19-03-56.png)
+  ![Significance of R-Squared](./media/2022-04-22-19-06-23.png)
+  ![Different R-Squared Comparison](./media/2022-04-22-18-59-47.png)
+  The regression model on the left accounts for 38.0% of the variance while the one on the right accounts for 87.4%. The more variance that is accounted for by the regression model the closer the data points will fall to the fitted regression line. 
+  
+#### Multiple Linear Regression
+
+more than one predictor variables are used to predict the response variable
+
+![Linear Regression Formula](./media/2022-04-22-16-41-27.png)
+![Multi-Linear Regression Formula](./media/2022-04-22-19-40-36.png)
+
+#### Data Cleaning for Machine Learning Modelling
+
+* Data Filtering
+* Aggregate Values
